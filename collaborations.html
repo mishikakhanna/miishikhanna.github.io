@@ -6,38 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Multi Color HTML Template</title>
-    
-    <!-- Load stylesheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">                
     <link rel="stylesheet" href="css/bootstrap.min.css">                                      
     <link rel="stylesheet" href="css/hero-slider-style.css">                              
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">                                 
+    <link rel="stylesheet" href="css/magnific-popup.css">                                 
     <link rel="stylesheet" href="css/tooplate-style.css">                                   
 
+    <style>
+        .tm-img-gallery {
+            display: flex; /* Use flexbox for horizontal layout */
+            flex-wrap: wrap; /* Allow wrapping */
+            justify-content: center; /* Center items */
+        }
+        .grid-item {
+            margin: 10px; /* Add some space between images */
+        }
+        .grid-item img {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Content -->
+    <div class="cd-hero">
+        <!-- Navigation -->        
+        <div class="cd-slider-nav">
+            <nav class="navbar">
+                <div class="tm-navbar-bg">
+                    <a class="navbar-brand text-uppercase" href="#"><i class="fa fa-gears tm-brand-icon"></i>Multi Color</a>
+                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                        &#9776;
+                    </button>
+                    <div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item active selected"><a class="nav-link" href="#0" data-no="1">Multi One</a></li>                                
+                            <li class="nav-item"><a class="nav-link" href="#0" data-no="2">Multi Two</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#0" data-no="3">Multi Three</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#0" data-no="4">Our Team</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#0" data-no="5">Keep in touch</a></li>
+                        </ul>
+                    </div>                        
+                </div>
+            </nav>
+        </div> 
 
-<div class="cd-hero">
-    <!-- Your content here -->
-</div>
+        <ul class="cd-hero-slider">
+            <!-- Page 1 Gallery One -->
+            <li class="selected">                    
+                <div class="cd-full-width">
+                    <div class="container-fluid js-tm-page-content" data-page-no="1" data-page-type="gallery">
+                        <div class="tm-img-gallery-container">
+                            <div class="tm-img-gallery gallery-one">
+                                <!-- Gallery One pop up connected with JS code below -->                                    
+                                <div class="tm-img-gallery-info-container">                                    
+                                    <h2 class="tm-text-title tm-gallery-title tm-white"><span class="tm-white">Multi Color Image Gallery</span></h2>
+                                    <p class="tm-text">This responsive HTML template includes three gallery pages. Multi color is designed by Tooplate. You may use this layout for your website.</p>
+                                </div>
 
-<!-- Include jQuery and Magnific Popup JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+                                <!-- Image Items -->
+                                <!-- Repeat this block for each image -->
+                                <div class="grid-item">
+                                    <figure class="effect-bubba">
+                                        <img src="img/tm-img-01-tn.jpg" alt="Image One" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title">Image <span>One</span></h2>
+                                            <p class="tm-figure-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            <a href="img/tm-img-01.jpg" class='popup-link'>View more</a> <!-- Popup link -->
+                                        </figcaption>           
+                                    </figure>
+                                </div>
 
-<!-- Initialize Magnific Popup -->
-<script>
-$(document).ready(function() {
-    $('.popup-link').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true // Enable gallery navigation
-        }
+                                <!-- Add more grid items similarly -->
+                                <!-- Example for another image -->
+                                <div class="grid-item">
+                                    <figure class="effect-bubba">
+                                        <img src="img/tm-img-02-tn.jpg" alt="Image Two" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title">Image <span>Two</span></h2>
+                                            <p class='tm-figure-description'>Maecenas purus sem, lobortis id odio in sapien.</p>
+                                            <a href='img/tm-img-02.jpg' class='popup-link'>View more</a> <!-- Popup link -->
+                                        </figcaption>           
+                                    </figure>
+                                </div>
+
+                                <!-- Continue adding grid-item divs for each image -->
+
+                            </div>                                 
+                        </div>                                                    
+                    </div>                    
+                </div>                    
+            </li>
+
+            <!-- Additional pages can be added here -->
+        </ul>
+
+    </div>
+
+    <!-- Include jQuery and Magnific Popup JS -->
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src='js/jquery.magnific-popup.min.js'></script>
+
+    <!-- Initialize Magnific Popup -->
+    <script>
+    $(document).ready(function() {
+        $('.popup-link').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true // Enable gallery navigation
+            }
+        });
     });
-});
-</script>
+    </script>
 
 </body>
 </html>
