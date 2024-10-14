@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         .horizontal-gallery {
@@ -54,17 +54,17 @@
         <h2>Brand Collaborations</h2>
         <div class="horizontal-gallery">
             <div class="gallery-item">
-                <a href="images/pic01.jpg" data-lightbox="collaboration-gallery" data-title="Brand Collaboration 1">
+                <a href="images/pic01.jpg" title="Brand Collaboration 1">
                     <img src="images/pic01.jpg" alt="Brand Collaboration 1" />
                 </a>
             </div>
             <div class="gallery-item">
-                <a href="images/pic02.jpg" data-lightbox="collaboration-gallery" data-title="Brand Collaboration 2">
+                <a href="images/pic02.jpg" title="Brand Collaboration 2">
                     <img src="images/pic02.jpg" alt="Brand Collaboration 2" />
                 </a>
             </div>
             <div class="gallery-item">
-                <a href="images/pic03.jpg" data-lightbox="collaboration-gallery" data-title="Brand Collaboration 3">
+                <a href="images/pic03.jpg" title="Brand Collaboration 3">
                     <img src="images/pic03.jpg" alt="Brand Collaboration 3" />
                 </a>
             </div>
@@ -72,6 +72,17 @@
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.gallery-item a').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true // Enable gallery navigation
+                }
+            });
+        });
+    </script>
 </body>
 </html>
