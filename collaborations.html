@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
+		.horizontal-gallery {
+    display: flex;
+    justify-content: center; /* Center the gallery horizontally */
+    overflow-x: auto;
+    gap: 10px;
+    padding: 20px 0;
+}
+.mfp-img {
+    display: block;
+    margin: 0 auto; /* Center image horizontally */
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-item {
+    min-width: 200px;
+    flex: 0 0 auto;
+    text-align: center; /* Center the content */
+}
+
 		.mfp-container {
 			width: auto !important; /* Allow popup to be responsive */
 			max-width: 90%; /* Limit the max width */
