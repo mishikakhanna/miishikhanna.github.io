@@ -3,14 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Multi Color HTML Template</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
-    <link rel="stylesheet" href="assets/font-awesome-4.5.0/css/font-awesome.min.css">                
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">                                      
-    <link rel="stylesheet" href="assets/css/hero-slider-style.css">                              
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">                                 
-    <link rel="stylesheet" href="assets/css/tooplate-style.css">                                   
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">                
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      
+    <link rel="stylesheet" href="css/hero-slider-style.css">                              
+    <link rel="stylesheet" href="css/magnific-popup.css">                                 
+    <link rel="stylesheet" href="css/tooplate-style.css">                                   
 
     <style>
         .tm-img-gallery {
@@ -47,11 +48,11 @@
                                     <!-- Example Image Item -->
                                     <div class="grid-item">
                                         <figure class="effect-bubba">
-                                            <img src="images/pic01.jpg" alt="Image One" class="img-fluid tm-img">
+                                            <img src="img/tm-img-01-tn.jpg" alt="Image One" class="img-fluid tm-img">
                                             <figcaption>
                                                 <h2 class="tm-figure-title">Image <span>One</span></h2>
                                                 <p class="tm-figure-description">Lorem ipsum dolor sit amet.</p>
-                                                <a href="images/pic01.jpg" class="popup-link">View more</a> <!-- Popup link -->
+                                                <a href="img/tm-img-01.jpg" class="popup-link">View more</a> <!-- Popup link -->
                                             </figcaption>           
                                         </figure>
                                     </div>
@@ -60,11 +61,11 @@
                                     <!-- Example for another image -->
                                     <div class="grid-item">
                                         <figure class="effect-bubba">
-                                            <img src="images/pic02.jpg" alt="Image Two" class="img-fluid tm-img">
+                                            <img src="img/tm-img-02-tn.jpg" alt="Image Two" class="img-fluid tm-img">
                                             <figcaption>
                                                 <h2 class="tm-figure-title">Image <span>Two</span></h2>
                                                 <p class="tm-figure-description">Maecenas purus sem.</p>
-                                                <a href="images/pic02.jpg" class="popup-link">View more</a> <!-- Popup link -->
+                                                <a href="img/tm-img-02.jpg" class="popup-link">View more</a> <!-- Popup link -->
                                             </figcaption>
                                         </figure>
                                     </div>
@@ -90,11 +91,7 @@
         $('.popup-link').magnificPopup({
             type: 'image',
             gallery: {
-                enabled: true // Enable gallery
-            },
-            zoom: {
-                enabled: true, // Enable zoom on hover
-                duration: 300 // Duration of zoom effect
+                enabled: true // Enable gallery navigation
             }
         });
     });
