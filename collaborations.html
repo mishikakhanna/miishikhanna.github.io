@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
     <link rel="stylesheet" href="assets/font-awesome-4.5.0/css/font-awesome.min.css">                
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">                                      
@@ -38,34 +36,39 @@
                     <div class="container-fluid js-tm-page-content" data-page-no="1" data-page-type="gallery">
                         <div class="tm-img-gallery-container">
                             <div class="tm-img-gallery gallery-one">
+                                <!-- Gallery Info -->
                                 <div class="tm-img-gallery-info-container">                                    
                                     <h2 class="tm-text-title tm-gallery-title tm-white"><span class="tm-white">Multi Color Image Gallery</span></h2>
                                     <p class="tm-text">This responsive HTML template includes three gallery pages. Multi color is designed by Tooplate.</p>
                                 </div>
+
+                                <!-- Image Grid -->
                                 <div class="tm-img-gallery">
-                                    <!-- All images will be displayed here -->
+                                    <!-- Example Image Item -->
                                     <div class="grid-item">
-										<figure class="effect-bubba">
-											<img src="images/pic01.jpg" alt="Image One" class="img-fluid tm-img">
-											<figcaption>
-												<h2 class="tm-figure-title">Image <span>One</span></h2>
-												<p class="tm-figure-description">Lorem ipsum dolor sit amet.</p>
-												<a href="images/pic01.jpg" class="popup-link">View more</a> <!-- Add class for popup -->
-											</figcaption>           
-										</figure>
-									</div>
+                                        <figure class="effect-bubba">
+                                            <img src="images/pic01.jpg" alt="Image One" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Image <span>One</span></h2>
+                                                <p class="tm-figure-description">Lorem ipsum dolor sit amet.</p>
+                                                <a href="images/pic01.jpg" class="popup-link">View more</a> <!-- Popup link -->
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+
                                     <!-- Repeat for additional images -->
                                     <!-- Example for another image -->
                                     <div class="grid-item">
-										<figure class="effect-bubba">
-											<img src="images/pic02.jpg" alt="Image One" class="img-fluid tm-img">
-											<figcaption>
-												<h2 class="tm-figure-title">Image <span>One</span></h2>
-												<p class="tm-figure-description">Lorem ipsum dolor sit amet.</p>
-												<a href="images/pic02.jpg" class="popup-link">View more</a> <!-- Add class for popup -->
-											</figcaption>           
-										</figure>
-									</div>
+                                        <figure class="effect-bubba">
+                                            <img src="images/pic02.jpg" alt="Image Two" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Image <span>Two</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem.</p>
+                                                <a href="images/pic02.jpg" class="popup-link">View more</a> <!-- Popup link -->
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+
                                     <!-- Continue adding grid-item divs for each image -->
                                 </div>                                 
                             </div>
@@ -74,24 +77,28 @@
                 </div>                    
             </li>
         </ul>
-    </div> 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
+    </div>
 
-<script>
-$(document).ready(function() {
-    $('.popup-link').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true // Enable gallery
-        },
-        zoom: {
-            enabled: true, // Enable zoom on hover
-            duration: 300 // Duration of zoom effect
-        }
+    <!-- Include jQuery and Magnific Popup JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Initialize Magnific Popup -->
+    <script>
+    $(document).ready(function() {
+        $('.popup-link').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true // Enable gallery
+            },
+            zoom: {
+                enabled: true, // Enable zoom on hover
+                duration: 300 // Duration of zoom effect
+            }
+        });
     });
-});
-</script>
+    </script>
+
 </body>
 </html>
