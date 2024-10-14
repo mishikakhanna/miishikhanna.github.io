@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
+		.mfp-container {
+			width: auto !important; /* Allow popup to be responsive */
+			max-width: 90%; /* Limit the max width */
+		}
+
+		.mfp-content {
+			overflow: hidden; /* Prevent overflow issues */
+		}
+
+		.mfp-close {
+			width: 30px; /* Adjust as needed */
+			height: 30px; /* Adjust as needed */
+			line-height: 30px; /* Center the icon */
+			text-align: center; /* Center text */
+			border-radius: 50%; /* Make it circular */
+			background-color: white; /* Background color */
+			color: black; /* Icon color */
+		}
+
         .horizontal-gallery {
             display: flex;
             overflow-x: auto;
@@ -76,14 +95,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script>
         $(document).ready(function() {
-    		$('.gallery-item a').magnificPopup({
-        		type: 'image',
-        		gallery: {
-            		enabled: true // Enable gallery navigation
-        		},
-        		titleSrc: null // Disable title display
-    		});
+			$('.gallery-item a').magnificPopup({
+				type: 'image',
+				gallery: {
+					enabled: true // Enable gallery navigation
+				},
+				titleSrc: null // Disable title display
+			});
 		});
+
     </script>
 </body>
 </html>
